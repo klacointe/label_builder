@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{label_builder}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["klacointe", "chikamichi"]
@@ -22,7 +22,12 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
-     "lib/label_builder.rb"
+     "VERSION",
+     "label_builder.gemspec",
+     "lib/label_builder.rb",
+     "lib/label_builder/core.rb",
+     "spec/label_builder_spec.rb",
+     "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/klacointe/label_builder}
   s.rdoc_options = ["--charset=UTF-8"]
