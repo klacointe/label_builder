@@ -1,6 +1,6 @@
-= label_builder
+= Label Builder
 
-Description goes here.
+Add :prefix and :suffix options to label_tag helper
 
 == Note on Patches/Pull Requests
  
