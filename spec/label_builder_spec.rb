@@ -21,4 +21,12 @@ describe "LabelBuilder" do
       :prefix => "PREFIX"
     ).should == '<label for="method_name">PREFIXmy_contentSUFFIX</label>'
   end
+  it "should use configuration" do
+    LabelBuilder.prefix = "PREFIX"
+    LabelBuilder.suffix = "SUFFIX"
+    label_tag(
+      "method_name", 
+      "my_content"
+    ).should == '<label for="method_name">PREFIXmy_contentSUFFIX</label>'
+  end
 end

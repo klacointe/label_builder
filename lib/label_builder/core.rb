@@ -11,7 +11,7 @@ module ActionView
           suffix = options.delete("suffix") if options.keys.include?("suffix")
           suffix = options.delete(:suffix) if options.keys.include?(:suffix)
         end
-        suffix ||= LabelBuilder.prefix
+        suffix ||= LabelBuilder.suffix
 
         # text to prefix
         if content_or_options && content_or_options.is_a?(Hash)
@@ -21,7 +21,7 @@ module ActionView
           prefix = options.delete("prefix") if options.keys.include?("prefix")
           prefix = options.delete(:prefix) if options.keys.include?(:prefix)
         end
-        prefix ||= LabelBuilder.suffix
+        prefix ||= LabelBuilder.prefix
 
         html = label_tag_without_modifiers(
           name, 
